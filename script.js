@@ -135,6 +135,20 @@ const translations = {
     joinTeamItem1: "Roles are reviewed weekly by the coordination team.",
     joinTeamItem2: "We will contact selected applicants by email.",
     joinTeamCta: "Open Team Application",
+    contactTag: "Direct Contact",
+    contactTitle: "Send a quick inquiry",
+    contactCopy:
+      "For general questions or partnership requests, send us a short message and it will be delivered directly to our inbox.",
+    contactEmailLabel: "Email address",
+    contactEmailPlaceholder: "Your email",
+    contactSubjectLabel: "Subject title",
+    contactSubjectPlaceholder: "Subject title",
+    contactMessageLabel: "Message",
+    contactMessagePlaceholder: "Write your message",
+    contactSubmit: "Send Message",
+    contactSubmitting: "Sending your message...",
+    contactSuccess: "Thank you. Your message has been sent.",
+    contactError: "Submission failed. Please try again in a moment.",
     teamFormNameLabel: "Full name",
     teamFormNamePlaceholder: "Full name",
     teamFormEmailLabel: "Email address",
@@ -282,6 +296,20 @@ const translations = {
     joinTeamItem1: "Rollen werden wochentlich vom Koordinationsteam gepruft.",
     joinTeamItem2: "Ausgewahlte Bewerber werden per E-Mail kontaktiert.",
     joinTeamCta: "Team-Bewerbung offnen",
+    contactTag: "Direkter Kontakt",
+    contactTitle: "Schnelle Anfrage senden",
+    contactCopy:
+      "Fur allgemeine Fragen oder Partnerschaftsanfragen sende uns eine kurze Nachricht, die direkt in unserem Postfach ankommt.",
+    contactEmailLabel: "E-Mail-Adresse",
+    contactEmailPlaceholder: "Deine E-Mail",
+    contactSubjectLabel: "Betreff",
+    contactSubjectPlaceholder: "Betreff",
+    contactMessageLabel: "Nachricht",
+    contactMessagePlaceholder: "Schreibe deine Nachricht",
+    contactSubmit: "Nachricht senden",
+    contactSubmitting: "Deine Nachricht wird gesendet...",
+    contactSuccess: "Danke. Deine Nachricht wurde gesendet.",
+    contactError: "Senden fehlgeschlagen. Bitte versuche es gleich erneut.",
     teamFormNameLabel: "Vollstandiger Name",
     teamFormNamePlaceholder: "Vollstandiger Name",
     teamFormEmailLabel: "E-Mail-Adresse",
@@ -405,3 +433,48 @@ try {
 }
 
 applyLanguage(initialLanguage);
+
+const contactForm = document.querySelector(".contact-form[data-web3forms]");
+const contactStatus = document.getElementById("contactStatus");
+
+if (contactForm && contactStatus) {
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const lang = translations[document.documentElement.lang]
+      ? document.documentElement.lang
+      : "en";
+    const dictionary = translations[lang];
+    const formData = new FormData(contactForm);
+
+    contactForm.classList.add("is-submitting");
+    contactStatus.classList.remove("is-success", "is-error");
+    contactStatus.textContent = dictionary.contactSubmitting;
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      const result = await response.json();
+
+      if (response.ok && result.success) {
+        contactStatus.classList.add("is-success");
+        contactStatus.textContent = dictionary.contactSuccess;
+        contactForm.reset();
+      } else {
+        contactStatus.classList.add("is-error");
+        contactStatus.textContent = result.message || dictionary.contactError;
+      }
+    } catch (_error) {
+      contactStatus.classList.add("is-error");
+      contactStatus.textContent = dictionary.contactError;
+    } finally {
+      contactForm.classList.remove("is-submitting");
+    }
+  });
+}

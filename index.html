@@ -284,6 +284,53 @@
               >
             </article>
           </div>
+
+          <article class="contact-block">
+            <p class="panel-tag" data-i18n="contactTag">Direct Contact</p>
+            <h3 data-i18n="contactTitle">Send a quick inquiry</h3>
+            <p data-i18n="contactCopy">
+              For general questions or partnership requests, send us a short
+              message and it will be delivered directly to our inbox.
+            </p>
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST" data-web3forms>
+              <input type="hidden" name="access_key" value="1ff92f92-a6c7-4ddb-b703-fb055f718d1a" />
+              <input type="checkbox" name="botcheck" class="sr-only" tabindex="-1" autocomplete="off" />
+              <input type="hidden" name="from_name" value="MSV Darmstadt Magazine Contact Form" />
+
+              <label for="contactEmail" class="sr-only" data-i18n="contactEmailLabel">Email address</label>
+              <input
+                id="contactEmail"
+                name="email"
+                type="email"
+                placeholder="Your email"
+                data-i18n-placeholder="contactEmailPlaceholder"
+                required
+              />
+
+              <label for="contactSubject" class="sr-only" data-i18n="contactSubjectLabel">Subject title</label>
+              <input
+                id="contactSubject"
+                name="subject"
+                type="text"
+                placeholder="Subject title"
+                data-i18n-placeholder="contactSubjectPlaceholder"
+                required
+              />
+
+              <label for="contactMessage" class="sr-only" data-i18n="contactMessageLabel">Message</label>
+              <textarea
+                id="contactMessage"
+                name="message"
+                rows="4"
+                placeholder="Write your message"
+                data-i18n-placeholder="contactMessagePlaceholder"
+                required
+              ></textarea>
+
+              <button type="submit" class="pill-btn primary" data-i18n="contactSubmit">Send Message</button>
+              <p class="contact-status" id="contactStatus" aria-live="polite"></p>
+            </form>
+          </article>
         </div>
       </section>
     </main>

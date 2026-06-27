@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minaret Stories | Digital Heritage Magazine</title>
+    <meta
+      name="description"
+      content="A pre-launch online magazine and digital heritage project by MSV Darmstadt, now collecting founding submissions."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Sora:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain"></div>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header class="site-header">
+      <a href="#" class="brand">
+        <span class="brand-mark">◍</span>
+        <span class="brand-text">Minaret Stories</span>
+      </a>
+      <nav class="site-nav">
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#team" data-i18n="navVision">Team</a>
+        <a href="#workflow" data-i18n="navCommunity">Workflow</a>
+        <a href="#join" data-i18n="navJoin">Join</a>
+      </nav>
+      <div class="header-controls">
+        <div class="lang-switcher" role="group" aria-label="Language switcher">
+          <button class="lang-btn active" type="button" data-lang="en">EN</button>
+          <button class="lang-btn" type="button" data-lang="de">DE</button>
+        </div>
+        <button class="pill-btn" data-i18n="headerCta">Submit a Story</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero reveal">
+        <p class="eyebrow" data-i18n="heroEyebrow">Online Magazine • Digital Heritage Project</p>
+        <p class="prelaunch-note" data-i18n="heroPrelaunch">Founding issue now in development • Accepting submissions</p>
+        <h1>
+          <span data-i18n="heroTitleLine1">A new magazine project by our MSV Darmstadt,</span>
+          <span data-i18n="heroTitleLine2">built to preserve and share living heritage.</span>
+        </h1>
+        <p class="hero-copy" data-i18n="heroCopy">
+          We have not published any works yet. This page introduces our direction,
+          invites early contributors, and helps shape the first issue from the
+          ground up.
+        </p>
+        <div class="hero-actions">
+          <a href="#team" class="pill-btn primary" data-i18n="heroPrimaryCta">See The Team Plan</a>
+          <a href="#join" class="text-link" data-i18n="heroSecondaryCta">Contribute Your Work</a>
+        </div>
+
+        <div class="hero-panels">
+          <article class="panel panel-main reveal">
+            <p class="panel-tag" data-i18n="panelMainTag">Pre-Launch Note</p>
+            <h2 data-i18n="panelMainTitle">No issues published yet</h2>
+            <p data-i18n="panelMainCopy">
+              We are currently in the building phase: defining editorial themes,
+              collecting first submissions, and preparing our launch edition.
+            </p>
+            <a href="#join" class="text-link" data-i18n="panelMainLink">Become a Founding Contributor</a>
+          </article>
+          <article class="panel panel-small reveal">
+            <p class="panel-tag" data-i18n="panelSide1Tag">Led By Students</p>
+            <h3 data-i18n="panelSide1Title">Structured as a real publication team</h3>
+            <p data-i18n="panelSide1Copy">Editors, designers, translators, and proofreaders working together.</p>
+          </article>
+          <article class="panel panel-small reveal">
+            <p class="panel-tag" data-i18n="panelSide2Tag">Open Call</p>
+            <h3 data-i18n="panelSide2Title">Aiming for 10 to 20 pieces</h3>
+            <p data-i18n="panelSide2Copy">Short stories, poetry, and articles for the inaugural issue.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section stories" id="about">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="aboutEyebrow">About The Project</p>
+          <h2 data-i18n="aboutTitle">From student association to global storytelling platform</h2>
+        </div>
+        <div class="story-rail" id="storyRail" aria-label="Featured stories carousel" data-i18n-aria-label="storyRailLabel">
+          <article class="story-card reveal">
+            <p class="meta" data-i18n="aboutCard1Meta">Who We Are</p>
+            <h3 data-i18n="aboutCard1Title">Muslim Student Association Initiative</h3>
+            <p data-i18n="aboutCard1Copy">
+              This magazine begins as an MSA-led project and will grow through
+              partnerships with community members, artists, and researchers.
+            </p>
+          </article>
+          <article class="story-card reveal">
+            <p class="meta" data-i18n="aboutCard2Meta">Why Now</p>
+            <h3 data-i18n="aboutCard2Title">Heritage is being lost in real time</h3>
+            <p data-i18n="aboutCard2Copy">
+              Oral traditions, local crafts, and intergenerational memory deserve
+              a dedicated digital home before they disappear.
+            </p>
+          </article>
+          <article class="story-card reveal">
+            <p class="meta" data-i18n="aboutCard3Meta">Our Approach</p>
+            <h3 data-i18n="aboutCard3Title">Magazine + Archive + Community</h3>
+            <p data-i18n="aboutCard3Copy">
+              We are blending strong editorial storytelling with respectful
+              archiving and community collaboration.
+            </p>
+          </article>
+          <article class="story-card reveal">
+            <p class="meta" data-i18n="aboutCard4Meta">Current Phase</p>
+            <h3 data-i18n="aboutCard4Title">Planning and contributor onboarding</h3>
+            <p data-i18n="aboutCard4Copy">
+              We are currently collecting ideas, materials, and contributors for
+              the launch cycle.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section archive" id="team">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="visionEyebrow">Digital Magazine Team Structure</p>
+          <h2 data-i18n="visionTitle">Branches, roles, and responsibilities</h2>
+        </div>
+        <div class="team-grid">
+          <article class="team-card reveal">
+            <p class="panel-tag" data-i18n="teamCoreTag">Core Leadership & Management</p>
+            <h3 data-i18n="teamCoreTitle">Project Lead / Managing Editor</h3>
+            <ul class="team-list">
+              <li data-i18n="teamCoreItem1">Owns overall strategy and timeline.</li>
+              <li data-i18n="teamCoreItem2">Meets board members and active group.</li>
+              <li data-i18n="teamCoreItem3">Gives final publication approval.</li>
+            </ul>
+          </article>
+          <article class="team-card reveal">
+            <p class="panel-tag" data-i18n="teamEditorialTag">Editorial & Content Branch</p>
+            <h3 data-i18n="teamEditorialTitle">Writers, editors, translators, proofreaders</h3>
+            <ul class="team-list">
+              <li data-i18n="teamEditorialItem1">Editors refine submissions with writers.</li>
+              <li data-i18n="teamEditorialItem2">10 to 20 contributors submit one piece each.</li>
+              <li data-i18n="teamEditorialItem5">Proofreaders and professors perform final checks.</li>
+            </ul>
+          </article>
+          <article class="team-card reveal">
+            <p class="panel-tag" data-i18n="teamDesignTag">Creative & Design Branch</p>
+            <h3 data-i18n="teamDesignTitle">Cover direction and interior design</h3>
+            <ul class="team-list">
+              <li data-i18n="teamDesignItem1">Art Director defines Minimalist, Vintage, or Bold style.</li>
+              <li data-i18n="teamDesignItem2">Cover Designer creates high-impact launch cover.</li>
+              <li data-i18n="teamDesignItem3">Interior Designers format pieces for flipbook reading.</li>
+              <li data-i18n="teamDesignItem4">Visual Coordinator manages photography and stock sourcing.</li>
+            </ul>
+          </article>
+          <article class="team-card reveal">
+            <p class="panel-tag" data-i18n="teamDistTag">Distribution & Digital Specialist</p>
+            <h3 data-i18n="teamDistTitle">Publishing and outreach delivery</h3>
+            <ul class="team-list">
+              <li data-i18n="teamDistItem1">Digital Publisher prepares and uploads the flipbook.</li>
+              <li data-i18n="teamDistItem2">Marketing Coordinator runs launch promotion.</li>
+              <li data-i18n="teamDistItem3">Performance tracking uses analytics and social channels.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section voices" id="community">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="communityEyebrow">Distribution Platforms & Tools</p>
+          <h2 data-i18n="communityTitle">How the issue will be published and promoted</h2>
+        </div>
+        <div class="distribution-grid">
+          <article class="distribution-card reveal">
+            <h3 data-i18n="distRole1Title">Digital Publisher</h3>
+            <p class="meta" data-i18n="distRole1RespLabel">Primary responsibility</p>
+            <p data-i18n="distRole1Resp">Upload and configure the PDF into a flipbook format.</p>
+            <p class="meta" data-i18n="distToolsLabel">Platform tools</p>
+            <p data-i18n="distRole1Tools">Heyzine, Flipsnack, or Amazon KDP</p>
+          </article>
+          <article class="distribution-card reveal">
+            <h3 data-i18n="distRole2Title">Marketing Coordinator</h3>
+            <p class="meta" data-i18n="distRole2RespLabel">Primary responsibility</p>
+            <p data-i18n="distRole2Resp">Organize announcements and promote links via Engage and social media.</p>
+            <p class="meta" data-i18n="distToolsLabel">Platform tools</p>
+            <p data-i18n="distRole2Tools">Google Analytics and social media channels</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section workflow" id="workflow">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="workflowEyebrow">Operational Workflow</p>
+          <h2 data-i18n="workflowTitle">Five stages from submissions to launch</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="year" data-i18n="workflowStep1Label">Step 01</span>
+            <h3 data-i18n="workflowStep1Title">Submission Phase</h3>
+            <p data-i18n="workflowStep1Copy">Send work submission forms and hire the design team.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="year" data-i18n="workflowStep2Label">Step 02</span>
+            <h3 data-i18n="workflowStep2Title">Curation Phase</h3>
+            <p data-i18n="workflowStep2Copy">Editors and proofreaders select the best 10 to 20 works.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="year" data-i18n="workflowStep3Label">Step 03</span>
+            <h3 data-i18n="workflowStep3Title">Design Phase</h3>
+            <p data-i18n="workflowStep3Copy">Designers style assigned works based on the chosen aesthetic.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="year" data-i18n="workflowStep4Label">Step 04</span>
+            <h3 data-i18n="workflowStep4Title">Final Review</h3>
+            <p data-i18n="workflowStep4Copy">Project Lead and advisor review the fully formatted magazine.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="year" data-i18n="workflowStep5Label">Step 05</span>
+            <h3 data-i18n="workflowStep5Title">Digital Launch</h3>
+            <p data-i18n="workflowStep5Copy">Host on a flipbook platform and share with the community.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section join" id="join">
+        <div class="join-card reveal">
+          <p class="eyebrow" data-i18n="joinEyebrow">Founding Contributors</p>
+          <h2 data-i18n="joinTitle">Submit work for our first publishing cycle.</h2>
+          <p data-i18n="joinCopy">
+            We are currently collecting essays, interviews, visuals, oral histories,
+            and archival materials. Share your idea and we will follow up with next
+            steps and editorial guidance.
+          </p>
+          <div class="join-forms">
+            <div class="form-block">
+              <h3 data-i18n="joinContribHeading">Contribute A Work</h3>
+              <form class="signup-form" action="#" method="post">
+                <label for="name" class="sr-only" data-i18n="formNameLabel">Full name</label>
+                <input id="name" type="text" placeholder="Full name" data-i18n-placeholder="formNamePlaceholder" required />
+                <label for="email" class="sr-only" data-i18n="formEmailLabel">Email address</label>
+                <input id="email" type="email" placeholder="Your email" data-i18n-placeholder="formEmailPlaceholder" required />
+                <label for="workType" class="sr-only" data-i18n="formTypeLabel">Type of work</label>
+                <select id="workType" required>
+                  <option value="" selected disabled data-i18n="formTypePlaceholder">Select work type</option>
+                  <option data-i18n="formTypeEssay">Essay / Feature</option>
+                  <option data-i18n="formTypePhoto">Story</option>
+                  <option data-i18n="formTypeAudio">Poetry</option>
+                  <option data-i18n="formTypeCraft">Travelogue</option>
+                  <option data-i18n="formTypeArchive">Other Works</option>
+                </select>
+                <label for="pitch" class="sr-only" data-i18n="formPitchLabel">Short pitch</label>
+                <textarea
+                  id="pitch"
+                  rows="4"
+                  placeholder="Share a short description of your work"
+                  data-i18n-placeholder="formPitchPlaceholder"
+                  required
+                ></textarea>
+                <button type="submit" class="pill-btn primary" data-i18n="formSubmit">Submit Interest</button>
+              </form>
+            </div>
+
+            <div class="form-block">
+              <h3 data-i18n="joinTeamHeading">Join Our Team</h3>
+              <p data-i18n="joinTeamCopy">Apply to join as a translator, proofreader, editor, or designer.</p>
+              <form class="signup-form" action="#" method="post">
+                <label for="teamName" class="sr-only" data-i18n="teamFormNameLabel">Full name</label>
+                <input id="teamName" type="text" placeholder="Full name" data-i18n-placeholder="teamFormNamePlaceholder" required />
+                <label for="teamEmail" class="sr-only" data-i18n="teamFormEmailLabel">Email address</label>
+                <input id="teamEmail" type="email" placeholder="Your email" data-i18n-placeholder="teamFormEmailPlaceholder" required />
+                <label for="teamRole" class="sr-only" data-i18n="teamFormRoleLabel">Role</label>
+                <select id="teamRole" required>
+                  <option value="" selected disabled data-i18n="teamFormRolePlaceholder">Select role</option>
+                  <option data-i18n="teamRoleTranslator">Translator</option>
+                  <option data-i18n="teamRoleProofreader">Proofreader</option>
+                  <option data-i18n="teamRoleEditor">Editor</option>
+                  <option data-i18n="teamRoleDesigner">Design Role</option>
+                </select>
+                <label for="teamNote" class="sr-only" data-i18n="teamFormNoteLabel">Short note</label>
+                <textarea
+                  id="teamNote"
+                  rows="4"
+                  placeholder="Tell us about your background and availability"
+                  data-i18n-placeholder="teamFormNotePlaceholder"
+                  required
+                ></textarea>
+                <button type="submit" class="pill-btn primary" data-i18n="teamFormSubmit">Join Team</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p data-i18n="footerLine1">Minaret Stories © 2026</p>
+      <p data-i18n="footerLine2">Built for memory, made for the future.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -5,7 +5,7 @@ const langButtons = document.querySelectorAll(".lang-btn");
 
 const translations = {
   en: {
-    pageTitle: "Minaret Stories | Digital Heritage Magazine",
+    pageTitle: "MSV Darmstadt Magazine | Digital Heritage Magazine",
     pageDescription:
       "A pre-launch online magazine and digital heritage project by MSV Darmstadt, now collecting founding submissions.",
     navAbout: "About",
@@ -148,11 +148,11 @@ const translations = {
     teamFormNoteLabel: "Short note",
     teamFormNotePlaceholder: "Tell us about your background and availability",
     teamFormSubmit: "Join Team",
-    footerLine1: "Minaret Stories © 2026",
+    footerLine1: "MSV Darmstadt Magazine © 2026",
     footerLine2: "Built for memory, made for the future.",
   },
   de: {
-    pageTitle: "Minaret Stories | Magazin fur digitales Kulturerbe",
+    pageTitle: "MSV Darmstadt Magazine | Magazin fur digitales Kulturerbe",
     pageDescription:
       "Ein Online-Magazin im Aufbau und Projekt fur digitales Kulturerbe von MSV Darmstadt, das jetzt erste Beitrage sammelt.",
     navAbout: "Uber uns",
@@ -295,7 +295,7 @@ const translations = {
     teamFormNoteLabel: "Kurze Notiz",
     teamFormNotePlaceholder: "Erzahle uns etwas uber deinen Hintergrund und deine Verfugbarkeit",
     teamFormSubmit: "Team beitreten",
-    footerLine1: "Minaret Stories © 2026",
+    footerLine1: "MSV Darmstadt Magazine © 2026",
     footerLine2: "Fur Erinnerung gebaut, fur die Zukunft gemacht.",
   },
 };

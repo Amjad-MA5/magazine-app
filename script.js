@@ -15,8 +15,8 @@ const translations = {
     headerCta: "Submit a Story",
     heroEyebrow: "Online Magazine • Digital Heritage Project",
     heroPrelaunch: "Founding issue now in development • Accepting submissions",
-    heroTitleLine1: "A new magazine project by our MSV Darmstadt,",
-    heroTitleLine2: "built to preserve and share living heritage.",
+    heroTitleLine1: "A new magazine project by MSV Darmstadt,",
+    heroTitleLine2: "built to preserve and share our heritage.",
     heroCopy:
       "We have not published any works yet. This page introduces our direction, invites early contributors, and helps shape the first issue from the ground up.",
     heroPrimaryCta: "See The Team Plan",
@@ -152,8 +152,8 @@ const translations = {
     headerCta: "Beitrag einreichen",
     heroEyebrow: "Online-Magazin • Projekt fur digitales Kulturerbe",
     heroPrelaunch: "Erstausgabe in Vorbereitung • Einreichungen geoffnet",
-    heroTitleLine1: "Ein neues Magazinprojekt unserer MSV Darmstadt,",
-    heroTitleLine2: "um lebendiges Kulturerbe zu bewahren und zu teilen.",
+    heroTitleLine1: "Ein neues Magazinprojekt der MSV Darmstadt,",
+    heroTitleLine2: "um unser Kulturerbe zu bewahren und zu teilen.",
     heroCopy:
       "Aktuell gibt es noch keine veroffentlichten Inhalte. Diese Seite zeigt unsere Richtung, ladet fruhe Mitwirkende ein und gestaltet die erste Ausgabe mit.",
     heroPrimaryCta: "Teamplan ansehen",

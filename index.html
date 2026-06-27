@@ -36,7 +36,14 @@
           <button class="lang-btn active" type="button" data-lang="en">EN</button>
           <button class="lang-btn" type="button" data-lang="de">DE</button>
         </div>
-        <button class="pill-btn" data-i18n="headerCta">Submit a Story</button>
+        <a
+          class="pill-btn"
+          data-i18n="headerCta"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSdlveAC1Dv8hRApMqDDQ9UyG8HjoGScy8CW-9DGQik4RpGS2A/viewform?usp=header"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Submit a Story</a
+        >
       </div>
     </header>
 
@@ -230,66 +237,48 @@
           <p class="eyebrow" data-i18n="joinEyebrow">Founding Contributors</p>
           <h2 data-i18n="joinTitle">Submit work for our first publishing cycle.</h2>
           <p data-i18n="joinCopy">
-            We are currently collecting essays, interviews, visuals, oral histories,
-            and archival materials. Share your idea and we will follow up with next
-            steps and editorial guidance.
+            We are currently accepting applications through secure Google Forms.
+            Choose the path that matches your interest and submit in a few minutes.
           </p>
-          <div class="join-forms">
-            <div class="form-block">
+          <div class="join-actions">
+            <article class="action-block">
+              <p class="panel-tag" data-i18n="joinContribTag">Contributor Intake</p>
               <h3 data-i18n="joinContribHeading">Contribute A Work</h3>
-              <form class="signup-form" action="#" method="post">
-                <label for="name" class="sr-only" data-i18n="formNameLabel">Full name</label>
-                <input id="name" type="text" placeholder="Full name" data-i18n-placeholder="formNamePlaceholder" required />
-                <label for="email" class="sr-only" data-i18n="formEmailLabel">Email address</label>
-                <input id="email" type="email" placeholder="Your email" data-i18n-placeholder="formEmailPlaceholder" required />
-                <label for="workType" class="sr-only" data-i18n="formTypeLabel">Type of work</label>
-                <select id="workType" required>
-                  <option value="" selected disabled data-i18n="formTypePlaceholder">Select work type</option>
-                  <option data-i18n="formTypeEssay">Essay / Feature</option>
-                  <option data-i18n="formTypePhoto">Story</option>
-                  <option data-i18n="formTypeAudio">Poetry</option>
-                  <option data-i18n="formTypeCraft">Travelogue</option>
-                  <option data-i18n="formTypeArchive">Other Works</option>
-                </select>
-                <label for="pitch" class="sr-only" data-i18n="formPitchLabel">Short pitch</label>
-                <textarea
-                  id="pitch"
-                  rows="4"
-                  placeholder="Share a short description of your work"
-                  data-i18n-placeholder="formPitchPlaceholder"
-                  required
-                ></textarea>
-                <button type="submit" class="pill-btn primary" data-i18n="formSubmit">Submit Interest</button>
-              </form>
-            </div>
+              <p data-i18n="joinContribCopy">
+                Submit essays, stories, poetry, visual narratives, and archival
+                concepts for editorial review.
+              </p>
+              <ul class="action-list">
+                <li data-i18n="joinContribItem1">Estimated completion time: 3 to 5 minutes.</li>
+                <li data-i18n="joinContribItem2">You can edit your response after submission.</li>
+              </ul>
+              <a
+                class="pill-btn primary"
+                data-i18n="joinContribCta"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdlveAC1Dv8hRApMqDDQ9UyG8HjoGScy8CW-9DGQik4RpGS2A/viewform?usp=header"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Open Contributor Form</a
+              >
+            </article>
 
-            <div class="form-block">
+            <article class="action-block">
+              <p class="panel-tag" data-i18n="joinTeamTag">Team Applications</p>
               <h3 data-i18n="joinTeamHeading">Join Our Team</h3>
               <p data-i18n="joinTeamCopy">Apply to join as a translator, proofreader, editor, or designer.</p>
-              <form class="signup-form" action="#" method="post">
-                <label for="teamName" class="sr-only" data-i18n="teamFormNameLabel">Full name</label>
-                <input id="teamName" type="text" placeholder="Full name" data-i18n-placeholder="teamFormNamePlaceholder" required />
-                <label for="teamEmail" class="sr-only" data-i18n="teamFormEmailLabel">Email address</label>
-                <input id="teamEmail" type="email" placeholder="Your email" data-i18n-placeholder="teamFormEmailPlaceholder" required />
-                <label for="teamRole" class="sr-only" data-i18n="teamFormRoleLabel">Role</label>
-                <select id="teamRole" required>
-                  <option value="" selected disabled data-i18n="teamFormRolePlaceholder">Select role</option>
-                  <option data-i18n="teamRoleTranslator">Translator</option>
-                  <option data-i18n="teamRoleProofreader">Proofreader</option>
-                  <option data-i18n="teamRoleEditor">Editor</option>
-                  <option data-i18n="teamRoleDesigner">Design Role</option>
-                </select>
-                <label for="teamNote" class="sr-only" data-i18n="teamFormNoteLabel">Short note</label>
-                <textarea
-                  id="teamNote"
-                  rows="4"
-                  placeholder="Tell us about your background and availability"
-                  data-i18n-placeholder="teamFormNotePlaceholder"
-                  required
-                ></textarea>
-                <button type="submit" class="pill-btn primary" data-i18n="teamFormSubmit">Join Team</button>
-              </form>
-            </div>
+              <ul class="action-list">
+                <li data-i18n="joinTeamItem1">Roles are reviewed weekly by the coordination team.</li>
+                <li data-i18n="joinTeamItem2">We will contact selected applicants by email.</li>
+              </ul>
+              <a
+                class="pill-btn"
+                data-i18n="joinTeamCta"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScKqZdUuWG-2XIADe_8XBPSOLmtnHYyDMOtV_kc-2QuL1-sdQ/viewform?usp=header"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Open Team Application</a
+              >
+            </article>
           </div>
         </div>
       </section>

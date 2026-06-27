@@ -544,10 +544,43 @@ main {
   margin-top: 70px;
   padding: 24px 6vw;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 10px;
   color: var(--muted);
   font-size: 0.88rem;
+}
+
+.footer-social {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 14px;
+  background: color-mix(in oklab, #fff, var(--surface) 40%);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.footer-social-icon {
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+}
+
+.footer-social-icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.8;
+}
+
+.footer-social:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 .reveal {

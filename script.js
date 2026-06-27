@@ -164,6 +164,7 @@ const translations = {
     teamFormSubmit: "Join Team",
     footerLine1: "MSV Darmstadt Magazine © 2026",
     footerLine2: "Built for memory, made for the future.",
+    footerInstagram: "Follow us on Instagram",
   },
   de: {
     pageTitle: "MSV Darmstadt Magazine | Magazin fur digitales Kulturerbe",
@@ -325,6 +326,7 @@ const translations = {
     teamFormSubmit: "Team beitreten",
     footerLine1: "MSV Darmstadt Magazine © 2026",
     footerLine2: "Fur Erinnerung gebaut, fur die Zukunft gemacht.",
+    footerInstagram: "Folge uns auf Instagram",
   },
 };
 
